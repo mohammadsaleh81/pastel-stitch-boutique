@@ -9,49 +9,49 @@ import { Filter, Search } from "lucide-react";
 const allProducts = [
   {
     id: 1,
-    name: "پیراهن دست‌دوز گلدار",
-    image: "https://images.pexels.com/photos/6069552/pexels-photo-6069552.jpeg",
-    price: "۲۸۰,۰۰۰",
-    category: "پیراهن",
+    name: "شمع معطر وانیلی",
+    image: "https://images.pexels.com/photos/278446/pexels-photo-278446.jpeg",
+    price: "۹۵,۰۰۰",
+    category: "شمع معطر",
   },
   {
     id: 2,
-    name: "شال دست‌دوز نخی",
-    image: "https://images.pexels.com/photos/6311387/pexels-photo-6311387.jpeg",
+    name: "گلدان سرامیکی طرح گل",
+    image: "https://images.pexels.com/photos/6069230/pexels-photo-6069230.jpeg",
     price: "۱۲۰,۰۰۰",
-    category: "شال و روسری",
+    category: "گلدان",
   },
   {
     id: 3,
-    name: "تونیک طرح سنتی",
-    image: "https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg",
-    price: "۳۵۰,۰۰۰",
-    category: "تونیک",
+    name: "آویز دیواری بوهو",
+    image: "https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg",
+    price: "۱۵۰,۰۰۰",
+    category: "دکوری دیواری",
   },
   {
     id: 4,
-    name: "بلوز سنتی گلدوزی شده",
-    image: "https://images.pexels.com/photos/6069723/pexels-photo-6069723.jpeg",
-    price: "۲۱۰,۰۰۰",
-    category: "بلوز",
+    name: "ست شمع استوانه‌ای",
+    image: "https://images.pexels.com/photos/3270223/pexels-photo-3270223.jpeg",
+    price: "۱۸۰,۰۰۰",
+    category: "شمع دکوری",
   },
   {
     id: 5,
-    name: "شلوار راحتی نخی",
-    image: "https://images.pexels.com/photos/6311649/pexels-photo-6311649.jpeg",
-    price: "۱۹۰,۰۰۰",
-    category: "شلوار",
+    name: "جاشمعی چوبی",
+    image: "https://images.pexels.com/photos/2931615/pexels-photo-2931615.jpeg",
+    price: "۸۵,۰۰۰",
+    category: "جاشمعی",
   },
   {
     id: 6,
-    name: "مانتو سنتی گلدوزی شده",
-    image: "https://images.pexels.com/photos/6069561/pexels-photo-6069561.jpeg",
-    price: "۴۵۰,۰۰۰",
-    category: "مانتو",
+    name: "ست دکوری هندسی",
+    image: "https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg",
+    price: "۲۲۰,۰۰۰",
+    category: "ست دکوری",
   },
 ];
 
-const categories = ["همه", "پیراهن", "شال و روسری", "تونیک", "بلوز", "شلوار", "مانتو"];
+const categories = ["همه", "شمع معطر", "شمع دکوری", "گلدان", "جاشمعی", "دکوری دیواری", "ست دکوری"];
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("همه");
@@ -69,11 +69,11 @@ const Products = () => {
       <Navbar />
       <main className="flex-grow">
         {/* Header */}
-        <div className="bg-pastel-mint bg-opacity-30 py-12 px-4">
+        <div className="bg-pastel-cream bg-opacity-30 py-12 px-4">
           <div className="container mx-auto text-center">
             <h1 className="text-4xl font-bold mb-4">محصولات ما</h1>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              مجموعه‌ای از بهترین لباس‌های دست‌دوز ما با طراحی منحصر به فرد
+              مجموعه‌ای از بهترین شمع‌ها و اکسسوری‌های دکوراتیو برای خانه شما
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Products = () => {
                 <input
                   type="text"
                   placeholder="جستجو در محصولات..."
-                  className="w-full py-2 px-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pastel-pink pr-10"
+                  className="w-full py-2 px-4 rounded-full border border-gray-200 focus:outline-none focus:ring-2 focus:ring-pastel-cream pr-10"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
@@ -108,8 +108,8 @@ const Products = () => {
                     key={category}
                     className={`py-2 px-4 rounded-full transition-all ${
                       selectedCategory === category
-                        ? "bg-pastel-pink text-primary-foreground"
-                        : "bg-gray-100 text-gray-600 hover:bg-pastel-pink hover:bg-opacity-30"
+                        ? "bg-pastel-cream text-accent-foreground"
+                        : "bg-gray-100 text-gray-600 hover:bg-pastel-cream hover:bg-opacity-30"
                     }`}
                     onClick={() => setSelectedCategory(category)}
                   >

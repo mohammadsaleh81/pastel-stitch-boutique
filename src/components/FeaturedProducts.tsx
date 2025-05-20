@@ -7,24 +7,24 @@ import ProductCard from "./ProductCard";
 const featuredProducts = [
   {
     id: 1,
-    name: "پیراهن دست‌دوز گلدار",
-    image: "https://images.pexels.com/photos/6069552/pexels-photo-6069552.jpeg",
-    price: "۲۸۰,۰۰۰",
-    category: "پیراهن",
+    name: "شمع معطر وانیلی",
+    image: "https://images.pexels.com/photos/278446/pexels-photo-278446.jpeg",
+    price: "۹۵,۰۰۰",
+    category: "شمع معطر",
   },
   {
     id: 2,
-    name: "شال دست‌دوز نخی",
-    image: "https://images.pexels.com/photos/6311387/pexels-photo-6311387.jpeg",
+    name: "گلدان سرامیکی طرح گل",
+    image: "https://images.pexels.com/photos/6069230/pexels-photo-6069230.jpeg",
     price: "۱۲۰,۰۰۰",
-    category: "شال و روسری",
+    category: "گلدان",
   },
   {
     id: 3,
-    name: "تونیک طرح سنتی",
-    image: "https://images.pexels.com/photos/6626903/pexels-photo-6626903.jpeg",
-    price: "۳۵۰,۰۰۰",
-    category: "تونیک",
+    name: "آویز دیواری بوهو",
+    image: "https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg",
+    price: "۱۵۰,۰۰۰",
+    category: "دکوری دیواری",
   },
 ];
 
@@ -35,7 +35,7 @@ const FeaturedProducts = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">محصولات ویژه</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            مجموعه‌ای از بهترین محصولات ما که با دقت و ظرافت دست‌دوز شده‌اند
+            مجموعه‌ای از زیباترین شمع‌ها و لوازم دکوری برای زیباتر کردن فضای خانه شما
           </p>
         </div>
 

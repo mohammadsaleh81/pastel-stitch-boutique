@@ -1,17 +1,17 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone, Home, Info, ShoppingBag } from "lucide-react";
+import { Mail, Phone, Home, Info, ShoppingBag, Candle } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-pastel-pink bg-opacity-30 py-8 mt-16">
+    <footer className="bg-pastel-cream bg-opacity-30 py-8 mt-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">فروشگاه لباس دست‌دوز</h3>
+            <h3 className="text-xl font-bold mb-4">فروشگاه شمع و دکوری</h3>
             <p className="text-gray-600">
-              لباس‌های دست‌دوز زیبا و منحصر به فرد با کیفیت عالی، طراحی شده با عشق
+              شمع‌های معطر و لوازم دکوری زیبا برای خانه شما، با کیفیت عالی و طراحی منحصر به فرد
             </p>
           </div>
 
@@ -50,7 +50,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-2">
                 <Mail size={16} className="text-gray-600" />
-                <span className="text-gray-600">info@handmade.com</span>
+                <span className="text-gray-600">info@candleshop.com</span>
               </p>
               <p className="flex items-center gap-2">
                 <Home size={16} className="text-gray-600" />
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-pastel-pink mt-8 pt-4 text-center text-gray-500">
+        <div className="border-t border-pastel-cream mt-8 pt-4 text-center text-gray-500">
           <p>© {new Date().getFullYear()} - تمامی حقوق محفوظ است</p>
         </div>
       </div>

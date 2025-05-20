@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { ShoppingBag } from "lucide-react";
+import { Candle, ShoppingBag } from "lucide-react";
 
 interface ProductCardProps {
   id: number;
@@ -27,7 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-2 left-2">
-          <span className="bg-pastel-mint bg-opacity-90 text-secondary-foreground px-3 py-1 rounded-full text-sm">
+          <span className="bg-pastel-cream bg-opacity-90 text-accent-foreground px-3 py-1 rounded-full text-sm">
             {category}
           </span>
         </div>
@@ -37,8 +37,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <h3 className="font-medium text-lg">{name}</h3>
         <div className="flex justify-between items-center mt-2">
           <span className="text-primary-foreground font-bold">{price} تومان</span>
-          <button className="bg-pastel-pink p-2 rounded-full hover:bg-opacity-80 transition-all">
-            <ShoppingBag size={20} className="text-primary-foreground" />
+          <button className="bg-pastel-cream p-2 rounded-full hover:bg-opacity-80 transition-all">
+            <ShoppingBag size={20} className="text-accent-foreground" />
           </button>
         </div>
       </div>

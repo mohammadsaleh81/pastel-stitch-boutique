@@ -18,38 +18,38 @@ const Index = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">چرا ما را انتخاب کنید</h2>
               <p className="text-gray-600 max-w-2xl mx-auto">
-                لباس‌های دست‌دوز ما با بهترین مواد و با دقت زیاد تولید می‌شوند
+                شمع‌ها و لوازم دکوری ما با بهترین مواد و با دقت زیاد تولید می‌شوند
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all text-center">
-                <div className="bg-pastel-pink p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl">✨</span>
+                <div className="bg-pastel-cream p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl">🕯️</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">کیفیت عالی</h3>
+                <h3 className="text-xl font-bold mb-2">موم طبیعی</h3>
                 <p className="text-gray-600">
-                  تمام محصولات ما با بهترین پارچه‌ها و با دقت زیاد دوخته می‌شوند
+                  تمام شمع‌های ما از موم طبیعی و با کیفیت ساخته شده‌اند
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all text-center">
                 <div className="bg-pastel-lavender p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl">🎨</span>
+                  <span className="text-2xl">🌿</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">طراحی منحصر به فرد</h3>
+                <h3 className="text-xl font-bold mb-2">رایحه‌های طبیعی</h3>
                 <p className="text-gray-600">
-                  هر محصول ما طراحی منحصر به فردی دارد که در جای دیگر پیدا نمی‌کنید
+                  از عصاره‌های گیاهی و روغن‌های اسانس طبیعی برای معطر کردن شمع‌ها استفاده می‌کنیم
                 </p>
               </div>
 
               <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all text-center">
-                <div className="bg-pastel-cream p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl">💝</span>
+                <div className="bg-pastel-pink p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl">🎨</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">ساخته شده با عشق</h3>
+                <h3 className="text-xl font-bold mb-2">طراحی منحصر به فرد</h3>
                 <p className="text-gray-600">
-                  تمام محصولات ما با عشق و علاقه ساخته می‌شوند
+                  طراحی‌های زیبا و خاص برای تمام محصولات دکوری ما
                 </p>
               </div>
             </div>
@@ -69,9 +69,9 @@ const Index = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all border-r-4 border-pastel-pink">
+              <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all border-r-4 border-pastel-cream">
                 <p className="text-gray-600 mb-4">
-                  "من عاشق لباس‌های دست‌دوز این فروشگاه هستم! کیفیت عالی و طراحی منحصر به فرد آنها واقعاً خاص است."
+                  "شمع‌های معطر این فروشگاه فوق‌العاده هستند! رایحه‌ها طبیعی و ماندگار هستند و طراحی زیبایی هم دارند."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-pastel-pink rounded-full mr-3 flex items-center justify-center font-bold">س</div>
@@ -84,7 +84,7 @@ const Index = () => {
 
               <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-all border-r-4 border-pastel-mint">
                 <p className="text-gray-600 mb-4">
-                  "پیراهنی که از اینجا خریدم بی‌نظیر است! دوخت تمیز و پارچه با کیفیت. حتماً دوباره خرید خواهم کرد."
+                  "گلدان‌های سرامیکی این فروشگاه بی‌نظیرند! کیفیت عالی و طراحی منحصر به فرد. حتماً دوباره خرید خواهم کرد."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-pastel-mint rounded-full mr-3 flex items-center justify-center font-bold">ن</div>
