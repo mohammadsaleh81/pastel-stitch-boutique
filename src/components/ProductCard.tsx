@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Candle, ShoppingBag } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 
 interface ProductCardProps {
   id: number;
