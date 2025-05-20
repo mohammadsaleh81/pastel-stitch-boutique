@@ -1,0 +1,49 @@
+
+import React from "react";
+import { Link } from "react-router-dom";
+import { ShoppingBag } from "lucide-react";
+
+interface ProductCardProps {
+  id: number;
+  name: string;
+  image: string;
+  price: string;
+  category: string;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({
+  id,
+  name,
+  image,
+  price,
+  category,
+}) => {
+  return (
+    <div className="card group hover:-translate-y-1">
+      <div className="relative overflow-hidden rounded-xl h-64">
+        <img
+          src={image}
+          alt={name}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
+        <div className="absolute top-2 left-2">
+          <span className="bg-pastel-mint bg-opacity-90 text-secondary-foreground px-3 py-1 rounded-full text-sm">
+            {category}
+          </span>
+        </div>
+      </div>
+
+      <div className="pt-4 pb-2">
+        <h3 className="font-medium text-lg">{name}</h3>
+        <div className="flex justify-between items-center mt-2">
+          <span className="text-primary-foreground font-bold">{price} تومان</span>
+          <button className="bg-pastel-pink p-2 rounded-full hover:bg-opacity-80 transition-all">
+            <ShoppingBag size={20} className="text-primary-foreground" />
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProductCard;
