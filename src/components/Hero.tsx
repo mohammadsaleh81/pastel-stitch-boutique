@@ -42,12 +42,12 @@ const Hero = () => {
           <div className="relative">
             <div className="relative z-10 rounded-full overflow-hidden border-8 border-white shadow-xl transform transition-all hover:scale-105 duration-300">
               <img
-                src="https://images.pexels.com/photos/278446/pexels-photo-278446.jpeg"
-                alt="Candles and Home Decor"
+                src="https://images.pexels.com/photos/7194420/pexels-photo-7194420.jpeg"
+                alt="Cute Fantasy Candles"
                 className="w-full h-auto"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
-                <p className="text-white text-center text-sm md:text-base font-medium">✨ شمع‌های خاص با رایحه‌های طبیعی ✨</p>
+                <p className="text-white text-center text-sm md:text-base font-medium">✨ شمع‌های خاص و فانتزی با رایحه‌های طبیعی ✨</p>
               </div>
             </div>
             

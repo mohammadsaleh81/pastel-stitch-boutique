@@ -4,28 +4,28 @@ import { Link } from "react-router-dom";
 import ProductCard from "./ProductCard";
 import { Package, Star } from "lucide-react";
 
-// Sample product data
+// Sample product data with cute fantasy candle images
 const featuredProducts = [
   {
     id: 1,
     name: "شمع معطر وانیلی",
-    image: "https://images.pexels.com/photos/278446/pexels-photo-278446.jpeg",
+    image: "https://images.pexels.com/photos/7173789/pexels-photo-7173789.jpeg",
     price: "۹۵,۰۰۰",
     category: "شمع معطر",
   },
   {
     id: 2,
-    name: "گلدان سرامیکی طرح گل",
-    image: "https://images.pexels.com/photos/6069230/pexels-photo-6069230.jpeg",
+    name: "شمع فانتزی رنگارنگ",
+    image: "https://images.pexels.com/photos/8141223/pexels-photo-8141223.jpeg",
     price: "۱۲۰,۰۰۰",
-    category: "گلدان",
+    category: "شمع دکوری",
   },
   {
     id: 3,
-    name: "آویز دیواری بوهو",
-    image: "https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg",
+    name: "شمع طرح گل رز",
+    image: "https://images.pexels.com/photos/3270223/pexels-photo-3270223.jpeg",
     price: "۱۵۰,۰۰۰",
-    category: "دکوری دیواری",
+    category: "شمع دکوری",
   },
 ];
 

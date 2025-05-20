@@ -5,47 +5,47 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { Filter, Search, Package, Star, Heart } from "lucide-react";
 
-// Sample product data
+// Sample product data with updated fantasy candle images
 const allProducts = [
   {
     id: 1,
     name: "شمع معطر وانیلی",
-    image: "https://images.pexels.com/photos/278446/pexels-photo-278446.jpeg",
+    image: "https://images.pexels.com/photos/7173789/pexels-photo-7173789.jpeg",
     price: "۹۵,۰۰۰",
     category: "شمع معطر",
   },
   {
     id: 2,
-    name: "گلدان سرامیکی طرح گل",
-    image: "https://images.pexels.com/photos/6069230/pexels-photo-6069230.jpeg",
+    name: "شمع فانتزی رنگارنگ",
+    image: "https://images.pexels.com/photos/8141223/pexels-photo-8141223.jpeg",
     price: "۱۲۰,۰۰۰",
-    category: "گلدان",
+    category: "شمع دکوری",
   },
   {
     id: 3,
-    name: "آویز دیواری بوهو",
-    image: "https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg",
+    name: "شمع طرح گل رز",
+    image: "https://images.pexels.com/photos/3270223/pexels-photo-3270223.jpeg",
     price: "۱۵۰,۰۰۰",
-    category: "دکوری دیواری",
+    category: "شمع دکوری",
   },
   {
     id: 4,
-    name: "ست شمع استوانه‌ای",
-    image: "https://images.pexels.com/photos/3270223/pexels-photo-3270223.jpeg",
+    name: "ست شمع استوانه‌ای رنگی",
+    image: "https://images.pexels.com/photos/4207785/pexels-photo-4207785.jpeg",
     price: "۱۸۰,۰۰۰",
     category: "شمع دکوری",
   },
   {
     id: 5,
-    name: "جاشمعی چوبی",
-    image: "https://images.pexels.com/photos/2931615/pexels-photo-2931615.jpeg",
+    name: "شمع فانتزی آبی",
+    image: "https://images.pexels.com/photos/8141176/pexels-photo-8141176.jpeg",
     price: "۸۵,۰۰۰",
-    category: "جاشمعی",
+    category: "شمع معطر",
   },
   {
     id: 6,
-    name: "ست دکوری هندسی",
-    image: "https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg",
+    name: "ست شمع طرح کاپ کیک",
+    image: "https://images.pexels.com/photos/6147357/pexels-photo-6147357.jpeg",
     price: "۲۲۰,۰۰۰",
     category: "ست دکوری",
   },
