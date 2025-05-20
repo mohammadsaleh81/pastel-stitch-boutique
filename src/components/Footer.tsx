@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone, Home, Info } from "lucide-react";
+import { Mail, Phone, Home, Info, ShoppingBag } from "lucide-react";
 
 const Footer = () => {
   return (
