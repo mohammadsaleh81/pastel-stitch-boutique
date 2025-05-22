@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, ShoppingBag, X, Home, Package, Info, Mail, Heart } from "lucide-react";
+import { Menu, ShoppingBag, X, Home, Package, Info, Mail, Heart, Sparkles } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,12 +26,17 @@ const Navbar = () => {
     <nav className="bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center group">
-          <div className="bg-pastel-pink rounded-full p-2 mr-2 group-hover:animate-bounce">
+          <div className="bg-pastel-pink rounded-full p-2 mr-2 group-hover:animate-bounce relative">
             <ShoppingBag className="text-white h-6 w-6" />
+            <span className="absolute -top-1 -right-1 text-lg animate-float">✨</span>
           </div>
           <div>
-            <h1 className="text-xl font-bold text-primary-foreground">فروشگاه شمع و دکوری</h1>
-            <p className="text-xs text-gray-500">زیبایی را به خانه خود بیاورید ✨</p>
+            <h1 className="text-xl font-bold text-primary-foreground flex items-center">
+              <span className="text-pastel-pink mr-1">لایت</span> 
+              <span>لند</span>
+              <Sparkles className="h-4 w-4 text-pastel-yellow ml-1 animate-pulse" />
+            </h1>
+            <p className="text-xs text-gray-500">زیبایی را به خانه خود بیاورید 🕯️✨</p>
           </div>
         </Link>
 

@@ -34,16 +34,21 @@ const Hero = () => {
 
             {/* Main heading with decorations */}
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              <span className="relative inline-block text-pastel-pink">
+                لایت لند
+                <span className="absolute -top-6 -right-6 text-3xl animate-float">✨</span>
+              </span> 
+              <br />
               <span className="relative inline-block">
                 شمع‌ها 
-                <span className="absolute -top-6 -right-6 text-3xl animate-float">✨</span>
+                <span className="absolute -top-6 -left-6 text-3xl animate-float" style={{ animationDelay: '0.5s' }}>🕯️</span>
               </span> 
               {" "}و{" "} 
               <span className="relative inline-block text-accent-foreground">
                 دکوری‌های
                 <div className="absolute -bottom-2 left-0 right-0 h-3 bg-pastel-yellow/30 -z-10 transform -rotate-1"></div>
               </span>
-              {" "}زیبا برای خانه شما
+              {" "}زیبا
             </h1>
             
             <p className="text-gray-600 mb-8 text-lg relative">
@@ -75,7 +80,7 @@ const Hero = () => {
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-4">
                 <p className="text-white text-center text-sm md:text-base font-medium">
                   <span className="inline-block mr-2 animate-float" style={{ animationDelay: '0.3s' }}>✨</span>
-                  شمع‌های خاص و فانتزی با رایحه‌های طبیعی
+                  <span className="text-pastel-pink font-bold">لایت لند</span> - شمع‌های خاص و فانتزی با رایحه‌های طبیعی
                   <span className="inline-block ml-2 animate-float" style={{ animationDelay: '0.7s' }}>✨</span>
                 </p>
               </div>

@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail, Phone, Home, Info, ShoppingBag, Gift, Heart, Star, Package } from "lucide-react";
+import { Mail, Phone, Home, Info, ShoppingBag, Gift, Heart, Star, Package, Sparkles } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,10 +10,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md transform hover:-translate-y-1 transition-all duration-300">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-pastel-yellow rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-pastel-yellow rounded-full flex items-center justify-center relative">
                 <Package size={20} className="text-accent-foreground" />
+                <span className="absolute -top-2 -right-2 text-lg">✨</span>
               </div>
-              <h3 className="text-xl font-bold">فروشگاه شمع و دکوری</h3>
+              <h3 className="text-xl font-bold flex items-center">
+                <span className="text-pastel-pink mr-1">لایت</span> 
+                <span>لند</span>
+                <Sparkles className="h-4 w-4 text-pastel-yellow ml-1" />
+              </h3>
             </div>
             <p className="text-gray-600">
               شمع‌های معطر و لوازم دکوری زیبا برای خانه شما، با کیفیت عالی و طراحی منحصر به فرد ✨
@@ -65,7 +70,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-2 transition-all hover:-translate-y-1">
                 <Mail size={16} className="text-pastel-pink" />
-                <span className="text-gray-600">info@candleshop.com</span>
+                <span className="text-gray-600">info@lightland.com</span>
               </p>
               <p className="flex items-center gap-2 transition-all hover:-translate-y-1">
                 <Home size={16} className="text-pastel-pink" />
@@ -83,7 +88,7 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <p className="text-white">© {new Date().getFullYear()} - تمامی حقوق محفوظ است</p>
+          <p className="text-white">© {new Date().getFullYear()} - لایت لند | تمامی حقوق محفوظ است</p>
         </div>
       </div>
     </footer>
