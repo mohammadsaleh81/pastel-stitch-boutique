@@ -78,6 +78,12 @@
 
   body {
     @apply bg-background text-foreground min-h-screen;
+    background-image: 
+      radial-gradient(circle at 20% 10%, rgba(255, 222, 226, 0.15) 0%, transparent 20%),
+      radial-gradient(circle at 80% 30%, rgba(209, 232, 224, 0.15) 0%, transparent 20%),
+      radial-gradient(circle at 40% 70%, rgba(254, 247, 205, 0.1) 0%, transparent 30%),
+      radial-gradient(circle at 70% 90%, rgba(229, 222, 255, 0.1) 0%, transparent 20%);
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -99,19 +105,43 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-pastel-pink hover:bg-opacity-80 text-white px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg hover:-translate-y-1;
+    @apply bg-pastel-pink hover:bg-opacity-90 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-lg hover:-translate-y-1 relative overflow-hidden;
+  }
+  
+  .btn-primary::before {
+    @apply content-[''] absolute inset-0 bg-white opacity-0 transition-opacity;
+  }
+  
+  .btn-primary:hover::before {
+    @apply animate-pulse opacity-10;
   }
   
   .btn-secondary {
-    @apply bg-pastel-mint hover:bg-opacity-80 text-secondary-foreground px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg hover:-translate-y-1;
+    @apply bg-pastel-mint hover:bg-opacity-90 text-secondary-foreground px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-lg hover:-translate-y-1;
   }
   
   .btn-accent {
-    @apply bg-pastel-cream hover:bg-opacity-80 text-accent-foreground px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg hover:-translate-y-1;
+    @apply bg-pastel-cream hover:bg-opacity-90 text-accent-foreground px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-lg hover:-translate-y-1;
   }
 
   .card {
-    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-4 border border-pastel-pink border-opacity-20 relative;
+    @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-4 border border-pastel-pink border-opacity-20 relative overflow-hidden;
+  }
+  
+  .card::before {
+    @apply content-[''] absolute -top-20 -right-20 w-40 h-40 rounded-full bg-gradient-to-br from-pastel-pink/10 to-pastel-cream/10 opacity-0 transition-opacity;
+  }
+  
+  .card:hover::before {
+    @apply opacity-100;
+  }
+  
+  .card::after {
+    @apply content-[''] absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-gradient-to-tr from-pastel-mint/10 to-pastel-lavender/10 opacity-0 transition-opacity;
+  }
+  
+  .card:hover::after {
+    @apply opacity-100;
   }
   
   /* کلاس‌های انیمیشن جدید */
@@ -125,6 +155,33 @@
   
   .pulse-animation {
     animation: pulse 2s infinite;
+  }
+  
+  .sparkle {
+    position: relative;
+  }
+  
+  .sparkle::before,
+  .sparkle::after {
+    content: "✨";
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .sparkle::before {
+    top: -15px;
+    left: -15px;
+  }
+  
+  .sparkle::after {
+    bottom: -15px;
+    right: -15px;
+  }
+  
+  .sparkle:hover::before,
+  .sparkle:hover::after {
+    opacity: 1;
   }
 }
 
@@ -145,6 +202,31 @@
   50% { opacity: 0.7; }
 }
 
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+@keyframes jello {
+  0%, 11.1%, 100% { transform: none; }
+  22.2% { transform: skewX(-12.5deg) skewY(-12.5deg); }
+  33.3% { transform: skewX(6.25deg) skewY(6.25deg); }
+  44.4% { transform: skewX(-3.125deg) skewY(-3.125deg); }
+  55.5% { transform: skewX(1.5625deg) skewY(1.5625deg); }
+  66.6% { transform: skewX(-0.78125deg) skewY(-0.78125deg); }
+  77.7% { transform: skewX(0.390625deg) skewY(0.390625deg); }
+  88.8% { transform: skewX(-0.1953125deg) skewY(-0.1953125deg); }
+}
+
+@keyframes bubble {
+  0% { transform: scale(1); opacity: 1; }
+  20% { transform: scale(1.05); }
+  40% { transform: scale(0.95); }
+  60% { transform: scale(1.03); }
+  80% { transform: scale(0.97); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
 /* کلاس‌های کاربردی برای انیمیشن‌های متنوع */
 .hover-grow {
   @apply transition-transform duration-300 hover:scale-110;
@@ -155,6 +237,21 @@
 }
 
 .hover-glow {
-  @apply transition-all duration-300 hover:shadow-lg hover:shadow-pastel-pink/40;
+  @apply transition-all duration-300 hover:shadow-lg;
 }
 
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-jello:hover {
+  animation: jello 1s both;
+}
+
+.animate-bubble {
+  animation: bubble 0.75s;
+}
+
+.hover-bubble:hover {
+  animation: bubble 0.75s;
+}
